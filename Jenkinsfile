@@ -4,7 +4,7 @@ pipeline {
         stage('smokeTest') {
             steps {
                 echo "Build is Started"
-				bat "clean install "
+				bat "mvn clean install "
 				echo "Build is Successful"
             }
         }
