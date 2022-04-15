@@ -4,7 +4,7 @@ pipeline {
         stage('CleanUP') {
             steps {
                 echo "Build is Started"
-				sh "mvn clean "
+				bat "mvn clean "
 				echo "Build is Successful"
             }
         }
