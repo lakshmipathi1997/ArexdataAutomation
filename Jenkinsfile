@@ -1,10 +1,10 @@
 pipeline {
     agent any
     stages { 
-        stage('CleanUP') {
+        stage('smokeTest') {
             steps {
                 echo "Build is Started"
-				bat "mvn clean "
+				bat "mvn test "
 				echo "Build is Successful"
             }
         }
