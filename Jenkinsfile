@@ -1,9 +1,11 @@
 pipeline {
     agent any
     stages { 
-        stage('Smoke') {
+        stage('CleanUP') {
             steps {
-                echo 'Hello World'
+                echo "Build is Started"
+				sh "mvn clean "
+				echo "Build is Successful"
             }
         }
     }
